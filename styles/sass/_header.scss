@@ -1,0 +1,57 @@
+.headerMobile {
+    display: none;
+}
+
+.headerMain {
+    background-color: #17181b;
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    color: white;
+}
+
+
+.headerMain li {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    font-size: 0.8rem;
+}
+
+.name {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.accent {
+    background-color: #28abdc;
+    padding: 5px 0;
+}
+
+.profile {
+    vertical-align: bottom;
+}
+
+.headerMain a {
+    color: white;
+}
+
+.headerMain a:hover,
+.headerMain a:focus {
+    color: #28abdc;
+}
+
+.navigation .link {
+    text-transform: uppercase;
+}
+
+.socials {
+ position: absolute; 
+ bottom: 18px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 100%;
+}
