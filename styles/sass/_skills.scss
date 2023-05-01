@@ -1,0 +1,41 @@
+.toolkit {
+    color: #28abdc;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    padding: 5px 0;
+    margin: 40px 0;
+    border-bottom: solid 1px rgba($color: #ffffff, $alpha: 0.4);
+}
+
+.toolkit .icon {
+    font-size: 40px;
+}
+
+.skillsUl {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    justify-content: center;
+}
+
+.skillList {
+    display: flex;
+    justify-content: center;
+}
+
+.skillsUl li {
+    margin: 15px 30px;
+    color: white;
+}
+
+.skillsLi p {
+    visibility: hidden;
+}
+
+.skillsLi:hover p {
+    visibility: visible;
+    cursor: pointer;
+    text-align: center;
+}
+
