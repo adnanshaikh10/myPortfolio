@@ -272,7 +272,7 @@
         </section>
         <!-- CONTACT SECTION STARTS -->
         <section id="contact" class="contact wrapper">
-            <div class="contactMe">
+            <div class="contactHeader">
                 <h2>Contact Me</h2>
                 <span class="icon">
                     <i class="lnr lnr-envelope"></i>
@@ -280,23 +280,28 @@
             </div>
             <div class="contactSection">
                 <div class="contactInfo">
-                    <h3>Let's Talk</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, nemo reiciendis ducimus
-                        voluptatem
-                        modi laboriosam?</p>
-                    <ul>
-                        <li>LinkedIn <a href="https://www.linkedin.com/in/mohammedashaikh/">@mohammedashaikh</a></li>
-                    </ul>
+                    <h3><span class="box">LET'S TALK</span></h3>
+                    <div class="contactParagraph">
+                        <p>If you have any questions, comments, or would like to discuss a potential project, please don't hesitate to reach out to me. You can use the contact form below or the link.</p>
+                        <p>I aim to respond to inquiries within 48 hours, so you can expect a prompt and professional reply. I am always happy to connect with new people and explore new opportunities.</p>
+                    </div>
+                    <div class="linkedInContact">
+                        LinkedIn <a href="https://www.linkedin.com/in/mohammedashaikh/">@mohammedashaikh</a>
+                    </div>
                 </div>
                 <div class="contactForm">
                     <form>
-                        <label class="sr-only" for="name">Name: </label>
-                        <input id="name" type="text" name="name" placeholder="Your name...">
-                        <label class="sr-only" for="email">Email: </label>
-                        <input id="email" type="text" name="email" placeholder="Your email...">
-                        <label class="sr-only" for="message">Message: </label>
-                        <input id="message" type="text" name="message" placeholder="Your message...">
-                        <input type="submit" value="Submit">
+                        <div class="input">
+                            <label class="sr-only" for="name">Name: </label>
+                            <input class="inputField" id="name" type="text" name="name" placeholder="Your name..." required>
+                            <label class="sr-only" for="email">Email: </label>
+                            <input class="inputField" id="email" type="text" name="email" placeholder="Your email..." required>
+                            <div class="message">
+                                <label class="sr-only" for="message">Message: </label>
+                                <input class="inputField" id="message" type="text" name="message" placeholder="Your message..." required>
+                                <input class="submitButton" type="submit" value="SUBMIT">
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -307,7 +312,8 @@
         <p>Created with <span class="icon">
             <i class="lnr lnr-heart"></i>
         </span> by Mohammed Shaikh</p>
-        <p>2023 &copy; All Rights Reserved. </p>
+        <p>2023 &copy; All Rights Reserved.</p>
+        <p>All icons from <a href="https://linearicons.com ">linearicons</a> & <a href="http://icons8.com">icons8</a></p>
     </footer>
 </body>
 
