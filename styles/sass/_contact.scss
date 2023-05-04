@@ -57,7 +57,8 @@
     flex-direction: column;
 }
 
-.inputField {
+.inputField,
+.message textarea {
     background-color: transparent;
     border: 1px solid white;
     padding: 10px 5px;
@@ -101,5 +102,9 @@
 .contactForm #message {
     height: 200px;
     width: 100%;
+}
+
+.message textarea {
+    resize: none;
 }
 

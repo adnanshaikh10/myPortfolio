@@ -1,3 +1,7 @@
+.mySkills li img {
+    font-size: 50px;
+}
+
 .toolkit {
     color: #28abdc;
     display: flex;
@@ -39,4 +43,9 @@
     cursor: pointer;
     text-align: center;
 }
+
+// media querie for skill img
+// .skillsUl li img {
+//     width: 75px;
+// }
 

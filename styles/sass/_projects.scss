@@ -1,0 +1,98 @@
+.projectHeader {
+    color: #28abdc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.7rem;
+    padding: 5px 0;
+    margin: 40px 0;
+    border-bottom: solid 1px rgba($color: #ffffff, $alpha: 0.4);
+}
+
+.projects img {
+    width: 300px;
+}
+.projects {
+    height: 100%;
+
+}
+
+.projectHeader .icon {
+    font-size: 40px;
+}
+
+.projects,
+.projects a {
+    color: white;
+}
+
+.projectNumber,
+.projectNumberReverse {
+    margin: 30px 0;
+    display: flex;
+    border-bottom: rgba($color: white, $alpha: 0.3) 1px dashed;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.myProjects .removeBorder {
+    border-bottom: none;
+}
+
+.projectNumber .underline,
+.projectNumberReverse .underline {
+    border-bottom: #28abdc 1px solid;
+}
+
+.linkForProjects a {
+    color: #28abdc;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 10px 15px;
+    border: #28abdc 2px solid;
+}
+
+.linkForProjects a:hover {
+    color: black;
+    background-color: #28abdc;
+    transition: 0.5s ease-in-out;
+}
+
+.projectNumber .projectDescription,
+.projectNumberReverse .projectDescription {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.projectNumber .projectTitle,
+.projectNumberReverse .projectTitle {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.projectNumber .elementUsed,
+.projectNumberReverse .elementUsed  {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.projectNumberReverse {
+    flex-direction: row-reverse;
+}
+
+.linkForProjects {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projectNumber .projectText,
+.projectNumberReverse .projectText {
+    width: 500px;
+    text-align: center;
+}
+
+.projectNumber li,
+.projectNumberReverse li {
+    padding: 25px 0;
+}
