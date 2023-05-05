@@ -37,17 +37,55 @@ a {
 
 h1 {
     font-weight: 700;
+    font-family: 'Playfair Display', serif;
 }
 
 h2 {
     font-weight: 500;
+    font-family: 'Playfair Display', serif;
 }
 
 h3,h4,
 h5 {
     font-weight: 400;
+    font-family: 'Playfair Display', serif;
 }
 
 p {
     font-weight: 300;
+}
+
+.home .arrowPulse {
+    display: inline-block;
+    font-size: 2rem;
+    animation: heartbeat 1s infinite;
+      animation-name: heartbeat;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      animation-fill-mode: none;
+      animation-play-state: running;
+  }
+
+@keyframes heartbeat{
+	0% {
+        transform: scale(.75);
+      }
+      20% {
+        transform: scale(1);
+      }
+      40% {
+        transform: scale(.75);
+      }
+      60% {
+        transform: scale(1);
+      }
+      80% {
+        transform: scale(.75);
+      }
+      100% {
+        transform: scale(.75);
+      }
 }

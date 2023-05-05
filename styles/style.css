@@ -266,21 +266,100 @@ a {
 
 h1 {
   font-weight: 700;
+  font-family: "Playfair Display", serif;
 }
 
 h2 {
   font-weight: 500;
+  font-family: "Playfair Display", serif;
 }
 
 h3, h4,
 h5 {
   font-weight: 400;
+  font-family: "Playfair Display", serif;
 }
 
 p {
   font-weight: 300;
 }
 
+.home .arrowPulse {
+  display: inline-block;
+  font-size: 2rem;
+  -webkit-animation: heartbeat 1s infinite;
+          animation: heartbeat 1s infinite;
+  -webkit-animation-name: heartbeat;
+          animation-name: heartbeat;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@-webkit-keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  100% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  20% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  100% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+}
 .headerMobile {
   display: none;
 }
@@ -353,7 +432,7 @@ p {
 }
 
 .home {
-  background-image: url(../assets/static-moon-background.jpeg);
+  background-image: url(../assets/staticbackground.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -383,6 +462,25 @@ p {
   color: #28abdc;
   border-bottom: 2px solid #28abdc;
   font-weight: 600;
+}
+
+.home .stars {
+  text-align: center;
+  background-color: #2c2d2f;
+  border: #28abdc 2px solid;
+  padding: 10px 15px;
+  color: #28abdc;
+  font-weight: 700;
+  margin: 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.home .stars:hover {
+  color: black;
+  background-color: #28abdc;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .aboutHeader {
@@ -717,6 +815,10 @@ p {
   padding: 25px 0;
 }
 
+.contact {
+  height: 100%;
+}
+
 .contactHeader {
   color: #28abdc;
   display: -webkit-box;
@@ -847,10 +949,9 @@ p {
   text-align: center;
   background-color: #2c2d2f;
   border: #28abdc 2px solid;
-  padding: 10px 0px;
+  padding: 10px 15px;
   color: #28abdc;
   font-weight: 700;
-  width: 30%;
   margin: 20px;
 }
 
