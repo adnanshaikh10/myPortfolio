@@ -35,6 +35,7 @@ navRefresh.forEach(function(link){
 
 function unshowMenu() {
     console.log("clicked wow");
+    showMenu();
 }
 
 
