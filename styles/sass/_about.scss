@@ -1,12 +1,14 @@
+@use "./variables" as v;
+
 .aboutHeader {
-    color: #28abdc;
+    color: v.$blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.7rem;
     padding: 5px 0;
     margin: 40px 0;
-    border-bottom: solid 1px rgba($color: #ffffff, $alpha: 0.4);
+    border-bottom: solid 1px rgba($color: v.$white, $alpha: 0.4);
 }
 
 .about {
@@ -17,7 +19,7 @@
 }
 
 .aboutRow {
-    color: white;
+    color: v.$white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,7 +51,7 @@
 }
 
 .info .underline {
-    border-bottom: #28abdc 2px solid;
+    border-bottom: v.$blue 2px solid;
     font-weight: 400;
 }
 
@@ -58,23 +60,23 @@
 }
 
 .resumeLink a {
-    color: #28abdc;
+    color: v.$blue;
     font-size: 0.9rem;
     font-weight: 700;
     padding: 10px 15px;
-    border: #28abdc 2px solid;
+    border: v.$blue 2px solid;
 }
 
 
 .resumeLink a:hover {
-    color: black;
-    background-color: #28abdc;
+    color: v.$black;
+    background-color: v.$blue;
     transition: 0.5s ease-in-out;
 }
 
 // PART 2 
 .services {
-    color: white;
+    color: v.$white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -99,12 +101,12 @@
 }
 
 .services .box {
-    border-bottom: #28abdc 2px solid;
+    border-bottom: v.$blue 2px solid;
 }
 
 .serviceList .service {
     font-size: 40px;
-    color: #28abdc;
+    color: v.$blue;
 }
 
 .serviceList li {
@@ -126,4 +128,28 @@ p {
 
 .service .position {
     margin-bottom: 10px;
+}
+
+@media (max-width: 1300px) {
+    .serviceList {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1265px) {
+    .aboutMe {
+        margin-bottom: 20px;
+    }
+    .aboutRow {
+        flex-direction: column;
+    }
+    .info {
+        margin: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .aboutMe {
+        width: 100%;
+    }
 }

@@ -1,19 +1,20 @@
+@use "./variables" as v;
+
 .headerMobile {
     display: none;
 }
 
 .headerMain {
-    background-color: #17181b;
+    background-color: v.$darkgrey;
     position: fixed;
     width: 200px;
     height: 100vh;
-    color: white;
+    color: v.$white;
 }
 
-
 .headerMain li {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid rgb(114, 114, 114);
+    border-bottom: 1px solid rgb(114, 114, 114);
     display: flex;
     justify-content: center;
     padding: 5px 0;
@@ -26,7 +27,7 @@
 }
 
 .accent {
-    background-color: #28abdc;
+    background-color: v.$blue;
     padding: 5px 0;
 }
 
@@ -35,12 +36,12 @@
 }
 
 .headerMain a {
-    color: white;
+    color: v.$white;
 }
 
 .headerMain a:hover,
 .headerMain a:focus {
-    color: #28abdc;
+    color: v.$blue;
 }
 
 .navigation .link {
@@ -54,4 +55,41 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 width: 100%;
+}
+
+@media (max-width: 840px) {
+    .headerMobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        color: v.$white;
+        top: 0;
+        left: 0;
+        height: 50px;
+        width: 100%;
+        background-color: v.$darkgrey;
+        z-index: 10;
+    }
+    .headerMobile h2 {
+        padding: 10px;
+    }
+    .headerMobile .hamburger {
+        display: flex;
+       align-items: center;
+       padding: 0 5px;
+       font-size: 1.5rem;
+       color: v.$white;
+       border-left: rgba(255, 255, 255, 0.3) 1px dashed;
+    }
+    .headerMobile .hamburger:hover {
+        cursor: pointer;
+    }
+    .headerMain {
+        left: -200px;
+    }
+    .headerMainActive {
+        left: 0;
+        z-index: 30;
+    }
 }

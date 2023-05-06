@@ -1,6 +1,14 @@
+@use "./variables" as v;
+
 html,body {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: v.$font-para
+}
+
+.content {
+  margin-left: 200px;
+  background-color: v.$grey;
+
 }
 
 li,p,ul,h1,h2,h3,h4,h5,img,a {
@@ -20,9 +28,14 @@ a {
     font-size: 20px ;
     padding: 0px 5px;
 }
-.home, .about,
+.about,
 .projects, .contact {
-    height: 100vh;
+    height: 100%;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
 }
 
 .mySkills {
@@ -37,18 +50,18 @@ a {
 
 h1 {
     font-weight: 700;
-    font-family: 'Playfair Display', serif;
+    font-family: v.$font-head
 }
 
 h2 {
     font-weight: 500;
-    font-family: 'Playfair Display', serif;
+    font-family: v.$font-head
 }
 
 h3,h4,
 h5 {
     font-weight: 400;
-    font-family: 'Playfair Display', serif;
+    font-family: v.$font-head
 }
 
 p {
@@ -88,4 +101,14 @@ p {
       100% {
         transform: scale(.75);
       }
+}
+
+@media (max-width: 840px) {
+  .content {
+    margin: 0;
+  }
+  .home, .about, .mySkills,
+  .projects, .contact {
+    padding-top: 10px;
+  }
 }

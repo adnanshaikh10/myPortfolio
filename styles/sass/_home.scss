@@ -1,18 +1,15 @@
-.content {
-    margin-left: 200px;
-    background-color: #2c2d2f;
+@use "./variables" as v;
 
-}
 .home {
     background-image: url(../assets/staticbackground.png);
     background-repeat: no-repeat;
     background-size: cover;
-    display: inline-block;
+    display: block;
 }
 .align {
     text-align: center;
     font-size: 2rem;
-    color: white;
+    color: v.$white;
 }
 
 .banner {
@@ -23,38 +20,47 @@
 
 .bannerContent h1 {
     font-size: 4rem;
-    color: white;
+    color: v.$white;
 }
 
 .bannerContent .color {
-    color: #28abdc;
+    color: v.$blue;
 }
 
 .bannerContent .underline {
-    color: #28abdc;
-    border-bottom: 2px solid #28abdc;
+    color: v.$blue;
+    border-bottom: 2px solid v.$blue;
     font-weight: 600;
 }
 
 .home .stars {
     text-align: center;
-    background-color: #2c2d2f;
-    border: #28abdc 2px solid;
+    background-color: v.$grey;
+    border: v.$blue 2px solid;
     padding: 10px 15px;
-    color: #28abdc;
+    color: v.$blue;
     font-weight: 700;
     margin: 20px;
     position: absolute;
     bottom: 0;
+    right: 0;
 }
 
 .home .stars:hover {
-    color: black;
-    background-color: #28abdc;
+    color: v.$black;
+    background-color: v.$blue;
     transition: 0.2s ease-in-out;
 }
 
-
-
-
+@media (max-width: 840px) {
+    .banner {
+        left: 5%;
+    }
+    .bannerContent p {
+        font-size: 1.5rem;
+    }
+    .bannerContent h1 {
+        font-size: 2.5rem;
+    }
+}
 
