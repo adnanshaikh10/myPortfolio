@@ -759,6 +759,9 @@ p {
   }
   .info .sideProfile img {
     max-width: 300px;
+    border-radius: 50%;
+    border: solid silver 2px;
+    overflow: hidden;
   }
   .info {
     display: -webkit-box;
