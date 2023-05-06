@@ -59,6 +59,10 @@
     padding: 30px 0;
 }
 
+.info .sideProfile {
+    display: none;
+}
+
 .resumeLink a {
     color: v.$blue;
     font-size: 0.9rem;
@@ -142,14 +146,48 @@ p {
     }
     .aboutRow {
         flex-direction: column;
+        align-items: flex-start;
     }
     .info {
         margin: 0;
     }
 }
 
+@media (max-width: 1265px ) {
+    .info .sideProfile {
+        display: block;
+    }
+    .info .sideProfile img {
+        max-width: 300px;
+    }
+    .info {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
 @media (max-width: 900px) {
     .aboutMe {
         width: 100%;
+    }
+}
+
+@media (max-width: 630px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info .sideProfile img {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 325px) {
+    .info .sideProfile img {
+        max-width: 200px;
+    }
+    .aboutMe img {
+        max-width: 250px;
     }
 }
