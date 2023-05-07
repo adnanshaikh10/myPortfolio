@@ -1,3 +1,86 @@
+@use "./variables" as v;
+
 .preloader {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: v.$grey;
+    z-index: 100;
+}
+
+.preloader .fadeOut {
+    opacity: 0;
+}
+
+.preloader .loader {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.preloader .dots {
+    display: flex;
+    justify-content: center;
+}
+
+.preloader .loader h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: v.$white;
+}
+
+.loader .dot {
+    width: .6rem;
+    height: .6rem;
+    margin: .19rem;
+    background: #1178a8;
+    border-radius: .3rem;
+    animation: loading 1s infinite alternate;
+}
+
+.loader .dot:nth-of-type(2) {
+    background: #0588a8;
+    animation-delay: 0.2s;
+}
+
+.loader .dot:nth-of-type(3) {
+    background: #065bca;
+    animation-delay: 0.4s;
+}
+
+.loader .dot:nth-of-type(4) {
+    background: #0679d6;
+    animation-delay: 0.6s;
+}
+
+.loader .dot:nth-of-type(5) {
+    background: #075ed1;
+    animation-delay: 0.8s;
+}
+
+.loader .dot:nth-of-type(6) {
+    background: #0549c7;
+    animation-delay: 1.0s;
+}
+
+.loader .dot:nth-of-type(7) {
+    background: #1380c9;
+    animation-delay: 1.2s;
+}
+
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
