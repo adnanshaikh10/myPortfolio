@@ -1089,6 +1089,26 @@ p {
   color: #ffffff;
 }
 
+.message textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.message textarea::-moz-placeholder {
+  color: #ffffff;
+}
+
+.message textarea:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.message textarea::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.message textarea::placeholder {
+  color: #ffffff;
+}
+
 .inputField:focus-visible {
   outline: none;
 }

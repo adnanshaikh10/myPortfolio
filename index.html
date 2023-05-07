@@ -301,7 +301,7 @@
                     </div>
                 </div>
                 <div class="contactForm">
-                    <form name="contact" method="POST" data-netlify="true">
+                    <form name="contact" method="POST" netlify>
                         <div class="input">
                             <label class="sr-only" for="name">Name: </label>
                             <input class="inputField" id="name" type="text" name="name" placeholder="*Your name..." required>
@@ -310,6 +310,7 @@
                             <div class="message">
                                 <label class="sr-only" for="message">Message: </label>
                                <textarea maxlength="250" id="message" name="message" placeholder="*Your Message...(max char 250)"></textarea>
+                               <div data-netlify-recaptcha="true"></div>
                                 <input class="submitButton" type="submit" value="SUBMIT">
                             </div>
                         </div>

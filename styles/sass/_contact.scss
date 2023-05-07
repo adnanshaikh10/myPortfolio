@@ -73,6 +73,10 @@
     color: v.$white;
 }
 
+.message textarea::placeholder {
+    color: v.$white;
+}
+
 .inputField:focus-visible {
     outline: none;
 }
