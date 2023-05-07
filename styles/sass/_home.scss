@@ -9,7 +9,6 @@
 .align {
     text-align: center;
     font-size: 2rem;
-    color: v.$white;
 }
 
 .banner {
@@ -21,7 +20,6 @@
 
 .bannerContent h1 {
     font-size: 4rem;
-    color: v.$white;
 }
 
 .bannerContent .color {
@@ -29,7 +27,6 @@
 }
 
 .bannerContent .underline {
-    color: v.$blue;
     border-bottom: 2px solid v.$blue;
     font-weight: 600;
 }

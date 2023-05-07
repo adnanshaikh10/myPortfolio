@@ -1,19 +1,15 @@
 @use "./variables" as v;
 
 .footer {
-    margin-left: 200px;
-    background-color: v.$grey;
-    color: v.$white;
     text-align: center;
 }
 
-.footer a {
-    color: v.$blue;
-    text-decoration: none;
+.footer .icon {
+    color: v.$blue
 }
 
-.footer .icon {
-    color: v.$blue;
+.footer .attribution {
+    font-size: 0.7rem;
 }
 
 @media (max-width: 840px) {

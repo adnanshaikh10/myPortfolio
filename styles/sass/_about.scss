@@ -1,25 +1,10 @@
 @use "./variables" as v;
 
-.aboutHeader {
-    color: v.$blue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.7rem;
-    padding: 5px 0;
-    margin: 40px 0;
-    border-bottom: solid 1px rgba($color: v.$white, $alpha: 0.4);
-}
-
 .about {
     height: 100%;
 }
-.aboutHeader .icon {
-    font-size: 40px;
-}
 
 .aboutRow {
-    color: v.$white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,7 +36,6 @@
 }
 
 .info .underline {
-    border-bottom: v.$blue 2px solid;
     font-weight: 400;
 }
 
@@ -63,24 +47,7 @@
     display: none;
 }
 
-.resumeLink a {
-    color: v.$blue;
-    font-size: 0.9rem;
-    font-weight: 700;
-    padding: 10px 15px;
-    border: v.$blue 2px solid;
-}
-
-
-.resumeLink a:hover {
-    color: v.$black;
-    background-color: v.$blue;
-    transition: 0.5s ease-in-out;
-}
-
-// PART 2 
 .services {
-    color: v.$white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -102,10 +69,6 @@
 
 .serviceList li {
     text-align: center;
-}
-
-.services .box {
-    border-bottom: v.$blue 2px solid;
 }
 
 .serviceList .service {

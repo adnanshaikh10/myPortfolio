@@ -4,21 +4,6 @@
     font-size: 50px;
 }
 
-.toolkit {
-    color: v.$blue;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.7rem;
-    padding: 5px 0;
-    margin: 40px 0;
-    border-bottom: solid 1px rgba($color: v.$white, $alpha: 0.4);
-}
-
-.toolkit .icon {
-    font-size: 40px;
-}
-
 .skillsUl {
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +18,6 @@
 
 .skillsUl li {
     margin: 15px 30px;
-    color: v.$white;
 }
 
 .skillsLi p {
