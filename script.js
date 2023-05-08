@@ -3,10 +3,10 @@ const loader = document.querySelector(".preloader");
 window.onload = function() {
     setTimeout(function(){
         loader.className = "fadeOut";
-    },500)
+    },300)
     setTimeout(function(){
         loader.style.display = "none";
-    },500)
+    },300)
 }
 
 const button = document.querySelector(".stars");
