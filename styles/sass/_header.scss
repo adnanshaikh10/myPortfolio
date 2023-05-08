@@ -50,12 +50,12 @@
 }
 
 .socials {
- position: absolute; 
- bottom: 18px;
-display: flex;
-justify-content: space-around;
-align-items: center;
-width: 100%;
+    position: absolute;
+    bottom: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 @media (max-width: 840px) {
@@ -72,23 +72,28 @@ width: 100%;
         background-color: v.$darkgrey;
         z-index: 10;
     }
+
     .headerMobile h2 {
         padding: 10px;
     }
+
     .headerMobile .hamburger {
         display: flex;
-       align-items: center;
-       padding: 0 5px;
-       font-size: 1.5rem;
-       color: v.$white;
-       border-left: rgba(255, 255, 255, 0.3) 1px dashed;
+        align-items: center;
+        padding: 0 5px;
+        font-size: 1.5rem;
+        color: v.$white;
+        border-left: rgba(255, 255, 255, 0.3) 1px dashed;
     }
+
     .headerMobile .hamburger:hover {
         cursor: pointer;
     }
+
     .headerMain {
         left: -200px;
     }
+
     .headerMainActive {
         left: 0;
         z-index: 30;
