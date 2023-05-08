@@ -266,7 +266,6 @@ html {
 .preloader .loader h3 {
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-weight: 700;
   color: #ffffff;
 }
 
@@ -658,7 +657,6 @@ p {
   background-image: url(../assets/staticbackground.png);
   background-repeat: no-repeat;
   background-size: cover;
-  display: block;
 }
 
 .align {
@@ -689,7 +687,6 @@ p {
 
 .bannerContent .underline {
   border-bottom: 2px solid #28abdc;
-  font-weight: 600;
 }
 
 .home .stars {
@@ -774,7 +771,6 @@ p {
   font-size: 1.5rem;
   padding: 30px 0;
   text-align: center;
-  font-weight: 500;
   margin: 30px 0px 50px 0;
 }
 

@@ -4,7 +4,6 @@
     background-image: url(../assets/staticbackground.png);
     background-repeat: no-repeat;
     background-size: cover;
-    display: block;
 }
 .align {
     text-align: center;
@@ -28,7 +27,6 @@
 
 .bannerContent .underline {
     border-bottom: 2px solid v.$blue;
-    font-weight: 600;
 }
 
 .home .stars {
