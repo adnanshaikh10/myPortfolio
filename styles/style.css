@@ -936,6 +936,11 @@ p {
   width: 300px;
 }
 
+.projects .specialPadding {
+  width: 275px;
+  padding: 0px 25px;
+}
+
 .projectNumber,
 .projectNumberReverse {
   margin: 30px 0;
@@ -1009,6 +1014,9 @@ p {
   }
   .projects img {
     width: 200px;
+  }
+  .projects .specialPadding {
+    width: 225px;
   }
   .projectNumber .projectText,
   .projectNumberReverse .projectText {
